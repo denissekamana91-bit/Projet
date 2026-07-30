@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-overlay"></div>
+
+    <nav class="glass-nav">
+        <div class="logo">
+            <i class="fas fa-graduation-cap"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/" data-i18n="nav_home">Accueil</a></li>
+            <li><a href="#categories" data-i18n="nav_categories">Catégories</a></li>
+            <li><a href="/upload" data-i18n="nav_upload">Contribuer</a></li>
+            <li><a href="#about" data-i18n="nav_about">À propos</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button id="lang-toggle" class="btn-glass">EN/FR</button>
+            <a href="#" class="btn-solid" data-i18n="nav_login">Connexion</a>
+        </div>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="glass-footer">
+        <div class="footer-content">
+            <h3 data-i18n="footer_contrib">Contribuez via WhatsApp</h3>
+            <p data-i18n="footer_whatsapp">Envoyez vos épreuves et documents directement sur WhatsApp pour enrichir la
+                plateforme :</p>
+            <a href="https://wa.me/221766918533" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> +221 76 691 85
+                33</a>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

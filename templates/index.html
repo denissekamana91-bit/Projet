@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<header class="hero-section">
+    <div class="hero-content glass-card">
+        <h1 class="welcome-title" data-i18n="welcome_title">Bienvenue</h1>
+        <p class="hero-subtitle" data-i18n="welcome_subtitle">L'excellence est une réussite collective. Trouvez, révisez
+            et partagez les meilleures ressources éducatives du lycée.</p>
+
+        <div class="search-container">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Rechercher une épreuve, une matière..." class="glass-input"
+                data-i18n-placeholder="search_placeholder">
+        </div>
+
+        <div class="hero-buttons">
+            <a href="#categories" class="btn-solid" data-i18n="btn_explore">Explorer les épreuves <i
+                    class="fas fa-arrow-right"></i></a>
+            <a href="/upload" class="btn-glass" data-i18n="btn_share">Partager un document</a>
+        </div>
+    </div>
+</header>
+
+<section id="categories" class="categories-section">
+    <div class="filters glass-card">
+        <span data-i18n="filter_title">Matières :</span>
+        <div class="tags">
+            <span class="tag">Mathématiques</span>
+            <span class="tag">Physique-Chimie</span>
+            <span class="tag">SVT</span>
+            <span class="tag">Français</span>
+            <span class="tag">Philosophie</span>
+            <span class="tag tag-optional">Allemand</span>
+            <span class="tag tag-optional">Musique</span>
+            <span class="tag tag-optional">Enseignement ménager</span>
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <a href="/categories/bac" class="glass-card category-card">
+            <i class="fas fa-award"></i>
+            <h3 data-i18n="cat_bac">Examens Officiels (BAC I & II)</h3>
+            <p data-i18n="cat_bac_desc">Épreuves de 2000 à 2026</p>
+        </a>
+        <a href="/categories/lycee_scientifique" class="glass-card category-card">
+            <i class="fas fa-globe-africa"></i>
+            <h3 data-i18n="cat_national">Épreuves Nationales</h3>
+            <p data-i18n="cat_national_desc">Togo & Lycée Scientifique de Lomé</p>
+        </a>
+        <a href="/categories/notre_dame" class="glass-card category-card">
+            <i class="fas fa-school"></i>
+            <h3 data-i18n="cat_school">Épreuves d'Établissement</h3>
+            <p data-i18n="cat_school_desc">Notre Dame de la Trinité</p>
+        </a>
+        <a href="/categories/matieres_facultatives" class="glass-card category-card">
+            <i class="fas fa-music"></i>
+            <h3 data-i18n="cat_optional">Matières Facultatives</h3>
+            <p data-i18n="cat_optional_desc">Allemand, Musique, etc.</p>
+        </a>
+        <a href="#" class="glass-card category-card">
+            <i class="fas fa-book-open"></i>
+            <h3 data-i18n="cat_library">Bibliothèque</h3>
+            <p data-i18n="cat_library_desc">Livres et annales de révision</p>
+        </a>
+        <a href="#" class="glass-card category-card">
+            <i class="fas fa-archive"></i>
+            <h3 data-i18n="cat_others">Autres Épreuves</h3>
+            <p data-i18n="cat_others_desc">Ressources diverses</p>
+        </a>
+    </div>
+</section>
+
+<section id="about" class="about-section glass-card">
+    <h2 data-i18n="about_title">Pourquoi j'ai créé ce site ?</h2>
+    <p class="about-text" id="about-text" data-i18n="about_text">
+        J'ai conçu cette plateforme avec une conviction forte : l'accès aux ressources éducatives ne devrait pas être un
+        obstacle. En tant qu'élève, j'ai réalisé à quel point il est souvent difficile de rassembler les anciennes
+        épreuves, les compositions et les annales nécessaires pour s'entraîner correctement. Ce site est né d'un profond
+        désir d'entraide et de la volonté de tirer tout le monde vers le haut. Il est pensé par un élève, pour les
+        élèves. Mon but est de permettre à chacun de s'élever au-delà des difficultés, de viser l'excellence absolue à
+        ses examens, et de bâtir un avenir solide. L'excellence est une réussite collective.
+    </p>
+</section>
+{% endblock %}

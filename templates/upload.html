@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="upload-container glass-card container">
+    <h2 data-i18n="upload_title">Partager une épreuve</h2>
+    <p data-i18n="upload_subtitle">Glissez-déposez votre fichier PDF ici ou cliquez pour parcourir.</p>
+
+    <div class="drag-drop-zone glass" id="drop-zone">
+        <i class="fas fa-cloud-upload-alt fa-3x"></i>
+        <p id="file-name">Aucun fichier sélectionné</p>
+        <input type="file" id="file-input" hidden accept=".pdf">
+        <button class="btn-glass" onclick="document.getElementById('file-input').click()">Parcourir les
+            fichiers</button>
+    </div>
+
+    <form class="upload-form">
+        <input type="text" placeholder="Titre de l'épreuve (ex: Devoir SVT 1er Trimestre)" class="glass-input">
+        <select class="glass-input">
+            <option value="">Sélectionnez la catégorie</option>
+            <option value="bac">Examens Officiels (BAC I & II)</option>
+            <option value="notre_dame">Notre Dame de la Trinité</option>
+            <option value="lycee_scientifique">Lycée Scientifique de Lomé</option>
+        </select>
+        <button type="button" class="btn-solid" style="width: 100%; margin-top: 20px;">Envoyer le document</button>
+    </form>
+</div>
+{% endblock %}
