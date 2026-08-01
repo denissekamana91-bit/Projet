@@ -103,6 +103,7 @@ body {
 .btn-solid {
     background: var(--primary-color);
     color: white;
+    margin: 10px;
     padding: 10px 25px;
     border: none;
     border-radius: 25px;
