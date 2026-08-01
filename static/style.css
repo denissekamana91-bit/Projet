@@ -137,6 +137,7 @@ body {
 .btn-solid denis{
     margin-right:0px;
     margin-left:auto;
+    display:block;
 }
 
 /* Hero Section */
