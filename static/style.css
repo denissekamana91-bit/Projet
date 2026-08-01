@@ -224,7 +224,7 @@ body {
     flex-wrap: wrap;
 }
 
-.tag {
+/*.tag {
     padding: 8px 15px;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -238,7 +238,7 @@ body {
 
 .tag-optional {
     border-color: var(--primary-color);
-}
+}*/
 
 .grid-container {
     display: grid;
