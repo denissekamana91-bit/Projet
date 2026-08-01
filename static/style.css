@@ -103,7 +103,7 @@ body {
 .btn-solid {
     background: var(--primary-color);
     color: white;
-    padding: 30px 40px;
+    padding: 10px 25px;
     border: none;
     border-radius: 25px;
     text-decoration: none;
@@ -224,7 +224,7 @@ body {
     flex-wrap: wrap;
 }
 
-/*.tag {
+.tag {
     padding: 8px 15px;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -238,7 +238,7 @@ body {
 
 .tag-optional {
     border-color: var(--primary-color);
-}*/
+}
 
 .grid-container {
     display: grid;
